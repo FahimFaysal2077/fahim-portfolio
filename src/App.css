@@ -12,6 +12,7 @@ body {
   background: url("./images/bg.png");
   background-repeat: no-repeat;
   background-size:cover;
+  overflow: hidden;
 }
 .navbar {
   width: 100%;
@@ -115,7 +116,19 @@ body {
   padding-top: 10px;
 }
 .banner__img img {
-  width: 538px;
+  width: 542px;
   padding: 0 30px;
   margin-top: 150px;
+}
+
+/* Services */
+.services {
+  background: #1f2235;
+  padding: 100px 0;
+  color: #fff;
+}
+.common {
+  width: 33.33333333333333%;
+  margin: 0 auto;
+  text-align: center;
 }

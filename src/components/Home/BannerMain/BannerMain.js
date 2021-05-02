@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import man from '../../../images/man-01.png';
 
 const BannerMain = () => {
+    const [state] = React.useState({title: 'I am Fahim Faysal', text: 'I,m Fahim, professional front-end web developer with long time experience in this field', image: `${man}`});
     return (
         <div className="header">
             <div className="container">
@@ -31,10 +32,8 @@ const BannerMain = () => {
                                         <FaInstagram />
                                     </li>
                                 </ul>
-                                <h1>I am Fahim Faysal</h1>
-                                <p>
-                                    I,m Fahim, professional front-end web developer with long time experience in this field
-                            ​    </p>
+                                <h1>{state.title}</h1>
+                                <p>{state.text}</p>
                                 <div className="header__buttons">
                                     <Link to="" className="btn btn-outline">
                                         My Portfolio
@@ -49,7 +48,7 @@ const BannerMain = () => {
                     </div>
                     <div className="col-6">
                         <div className="banner__img">
-                            <img src={man} alt="man"/>
+                            <img src={state.image} alt="man"/>
                         </div>
                     </div>
                 </div>
