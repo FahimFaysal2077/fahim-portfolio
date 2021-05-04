@@ -20,16 +20,16 @@ const BannerMain = () => {
                             <div className="header__section">
                                 <ul className="header__ul">
                                     <li>
-                                        <FaFacebookF />
+                                        <FaFacebookF className="headerIcon" />
                                     </li>
                                     <li>
-                                        <FaTwitter />
+                                        <FaTwitter className="headerIcon" />
                                     </li>
                                     <li>
-                                        <FaPinterest />
+                                        <FaPinterest className="headerIcon" />
                                     </li>
                                     <li>
-                                        <FaInstagram />
+                                        <FaInstagram className="headerIcon" />
                                     </li>
                                 </ul>
                                 <h1>{state.title}</h1>
